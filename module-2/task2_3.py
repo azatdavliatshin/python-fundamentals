@@ -5,6 +5,11 @@
 # Input: ['red', 'white', 'black', 'red', 'green', 'black']
 # Output: ['black', 'green', 'red', 'white']
 
+def execute_task():
+    print("Python program that accepts a comma separated sequence of words as input and prints the unique words in sorted form\n")
+    sequence = input("Provide comma seprated (without spaces) sequence of words:\n")
+    print("Output is {}\n".format(normalize_list(sequence.split(","))))
+
 def normalize_list(list, reverse=False):
     return sorted(set(list), reverse=reverse);
 
