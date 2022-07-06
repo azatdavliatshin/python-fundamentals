@@ -4,6 +4,7 @@ from task2_3 import execute_task as task3
 from task2_4 import execute_task as task4
 from task2_5 import execute_task as task5
 from task2_6 import execute_task as task6
+from task2_7 import execute_task as task7
 
 is_exit_request = False
 available_tasks = {
@@ -12,7 +13,8 @@ available_tasks = {
     "2.3": task3,
     "2.4": task4,
     "2.5": task5,
-    "2.6": task6
+    "2.6": task6,
+    "2.7": task7
 }
 
 while not is_exit_request:

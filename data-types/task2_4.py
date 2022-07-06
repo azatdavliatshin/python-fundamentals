@@ -10,12 +10,9 @@ def execute_task():
     num = int(input("Enter a number\n"))
     print("Output is {}\n".format(find_divisors(num)))
 
+
 def find_divisors(num):
-    divisors = [1]
-    for digit in range(2, num):
-        if num % digit == 0:
-            divisors.append(digit)
-    divisors.append(num)
-    return divisors
+    return [divisor for divisor in range(1, num + 1) if num % divisor == 0]
+
 
 assert find_divisors(60) == [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
