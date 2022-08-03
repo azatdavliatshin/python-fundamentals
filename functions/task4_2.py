@@ -17,4 +17,3 @@ def isStringPalindrome(str):
 assert isStringPalindrome("Test") == False
 assert isStringPalindrome("racecar") == True
 assert isStringPalindrome("radar") == True
-
